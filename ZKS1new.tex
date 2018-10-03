@@ -189,23 +189,32 @@ Darbo eigoje apžvelgsime pasisekusias vartotojo sąsajos realizacijas ir aptars
 			Pardavėjas - kasdien naudojantis sistemą užsakymams apdoroti. Būtų galima išskirti dvi grupes, naujas pardavėjas ir pardavėjas su patirtimi, tačiau įsisavinti sistemą iš pardavėjo pusės neturėtų trukti ilgai.
 	\subsection{Kompiuterizuojamų veiklų analizė}
 		\subsubsection{Konceptinis scenarijus}
-			Jonas yra pardavėjas, siekiantis kontroliuoti ir įgyvendinti užsakymus, kuriuos pateikia pirkėjai. Jonas atsidaro pardavėjo sistemą ir mato sąrašą su visais užsakymais. Užsakyme nurodyta, kokios prekės buvo užsakytos, apmokėjimo būdas, kaina ir užsakymo būsena(Apmokėta, neapmokėta, paruošta atsiėmimui, atsiimta). Jonas atsidaro užsakymų sąrašą, pasirenka dar neparuoštą atsiėmimui užsakymą, surenka prekes iš parduotuvės ir paruošia atsiėmimui. Pristačius arba vartotojui pačiam atsiėmus prekes, pardavėjas atnaujina užsakymo būseną į ,,Atsiimta". 
+			Jonas yra pardavėjas, siekiantis kontroliuoti ir įgyvendinti užsakymus, kuriuos pateikia pirkėjai. Jonas atsidaro pardavėjo sistemą ir mato sąrašą su visais užsakymais. Užsakyme nurodyta, kokios prekės buvo užsakytos, apmokėjimo būdas, kaina, data, adresas ir užsakymo būsena(Apmokėta, neapmokėta, paruošta atsiėmimui, atsiimta). Jonas atsidaro užsakymų sąrašą, pasirenka dar neparuoštą atsiėmimui užsakymą, surenka prekes iš parduotuvės ir paruošia atsiėmimui. Pristačius arba vartotojui pačiam atsiėmus prekes, pardavėjas atnaujina užsakymo būseną į ,,Atsiimta". 
 			
 		\subsubsection{Veiklų charakteristikos}
-			\subsubsubsection{Veiklos dažnis}
-			\begin{itemize}
-				\item{Naujokas pardavėjas - kadangi pardavėjas nepatyręs, tikriausiai neturi daug užsakymų, todėl sistema tikėtina nesinaudoja kiekvieną dieną. Svarbus sistemos naudojimosi aiškumas ir patikimumas.}
-				\item{Patyręs pardavėjas - tikėtina, kad patyręs pardavėjas naudojasi sistema kiekvieną dieną. Sistema jau turėtų būti perprasta, todėl svarbus našumas, supaprastinta prieiga prie dažnai naudojamų funkcijų.}
-				\end{itemize}
+			Veiklos dažnis priklauso nuo naudotojo patyrimo: naujokas pardavėjas - kadangi pardavėjas nepatyręs, tikriausiai neturi daug užsakymų, todėl sistema tikėtina nesinaudoja kiekvieną dieną. Svarbus sistemos naudojimosi aiškumas ir patikimumas. Patyręs pardavėjas - tikėtina, kad patyręs pardavėjas naudojasi sistema kiekvieną dieną. Sistema jau turėtų būti perprasta, todėl svarbus našumas, supaprastinta prieiga prie dažnai naudojamų funkcijų.
+			Veiklos trukmė turėtų būti truputį ilgesnė naujam pardavėjui negu patyrusiam, bet iš esmės rasti peržiūrėti informaciją turėtų trukti ne ilgiau nei 5 min.
+			Kadangi pardavėjui svarbu tik peržvelgti informaciją ir ją atnaujinti, veikla nuosekli, o atsako laikas nėra tiek aktualus.
+			
 		\subsubsection{Problemos ir tobulėjimo galimybės}
 		\subsubsection{Būsimasis scenarijus}
-		\subsubsubsection{Pradedančio pardavėjo būsimasis scenarijus}
 				\begin{enumerate}
 					\item{Linas nueina į aludarystės internetinę parduotuvę ir bando gauti informaciją apie užsakymus.}
-					\item{}
+					\item{Pagrindiniame puslapyje vartotojas paspaudžia ,,Užsakymai"}
+					\item{Atsidaro langas, kuriame pateiktas sąrašas su visais užsakymais}
+					\item{Užsakyme nurodyta, kokios prekės buvo užsakytos, apmokėjimo būdas, kaina, data, adresas ir užsakymo būsena(Apmokėta, neapmokėta, paruošta atsiėmimui, atsiimta)}
+					\item{Linas pasirenka dar neparuoštą atsiėmimui užsakymą}
+					\item{Linas surenka prekes iš parduotuvės ir paruošia atsiėmimui}
+					\item{Pristačius arba vartotojui pačiam atsiėmus prekes, pardavėjas atnaujina užsakymo būseną į ,,Atsiimta".}
 					\end{enumerate}
 	\subsection{Panaudojamumo siekiai ir matai}
-
+	\begin{itemize}
+	\item{Pardavėjas savo užsakymų sąrašą galės rasti ne daugiau nei per 2 veiksmus.}
+	\item{Pardavėjas turi turėti galimybę susisiekti su pirkėju.}
+	\item{Kiekviena prekė pateikta su prekės kodu.}
+	\item{Pardavėjas turi turėti galimybę rūšiuoti užsakymus pagal datą ir būseną.}
+	\item{Pardavėjas galės pakeisti būseną ne daugiau nei per 2 veiksmus.}
+	\end{itemize}
 \section{Įkvepiančios esamų interfeisų idėjos}
 	\subsection{Paieškos interfeisas}
 		\begin{figure}[h]
