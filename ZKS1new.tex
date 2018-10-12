@@ -276,34 +276,71 @@ Darbo eigoje apžvelgsime pasisekusias vartotojo sąsajos realizacijas ir aptars
 		\subsubsection{Naudotojų tipai}
 			Pardavėjas - kasdien naudojantis sistemą užsakymams apdoroti. Būtų galima išskirti dvi grupes, naujas pardavėjas ir pardavėjas su patirtimi, tačiau įsisavinti sistemą iš pardavėjo pusės neturėtų trukti ilgai.
 	\subsection{Kompiuterizuojamų veiklų analizė}
-		\subsubsection{Konceptinis scenarijus}
-			Jonas yra pardavėjas, siekiantis kontroliuoti ir įgyvendinti užsakymus, kuriuos pateikia pirkėjai. Jonas atsidaro pardavėjo sistemą ir mato sąrašą su visais užsakymais. Užsakyme nurodyta, kokios prekės buvo užsakytos, apmokėjimo būdas, kaina, data, adresas ir užsakymo būsena(Apmokėta, neapmokėta, paruošta atsiėmimui, atsiimta). Jonas atsidaro užsakymų sąrašą, pasirenka dar neparuoštą atsiėmimui užsakymą, surenka prekes iš parduotuvės ir paruošia atsiėmimui. Pristačius arba vartotojui pačiam atsiėmus prekes, pardavėjas atnaujina užsakymo būseną į ,,Atsiimta".
 
+	\subsection{Pardavėjas įvykdo užsakymą}
+		\subsubsection{Koncepcinis scenarijus}
+			Jonas yra pardavėjas, siekiantis kontroliuoti ir įgyvendinti užsakymus, kuriuos pateikia pirkėjai. Jonas atsidaro pardavėjo sistemą, bet prieiti prie užsakymų reikia per 3 paspaudimus. Galiausiai paspaudus ''Mano užsakymai'', parodomas užsakymų sąrašas, kuriame nurodytas prekės su pavadinimais, adresas ir būsena (apmokėta, neapmokėta, paruošta atsiėmimui, atsiimta). Jonas nori matyti visus neįvykdytus užsakymus puslapio pradžioje, bet tam nėra galimybės. Norint pamatyti daugiau informacijos, reikia paspausti mygtuką ''Rodyti daugiau''.  Surinkus visas nurodytas prekes Jonas pakeičia užsakymo būseną į ''Paruošta atsiėmimui''.
+			
 		\subsubsection{Veiklų charakteristikos}
 			Veiklos dažnis priklauso nuo naudotojo patyrimo: naujokas pardavėjas - kadangi pardavėjas nepatyręs, tikriausiai neturi daug užsakymų, todėl sistema tikėtina nesinaudoja kiekvieną dieną. Svarbus sistemos naudojimosi aiškumas ir patikimumas. Patyręs pardavėjas - tikėtina, kad patyręs pardavėjas naudojasi sistema kiekvieną dieną. Sistema jau turėtų būti perprasta, todėl svarbus našumas, supaprastinta prieiga prie dažnai naudojamų funkcijų.
 			Veiklos trukmė turėtų būti truputį ilgesnė naujam pardavėjui negu patyrusiam, bet iš esmės rasti peržiūrėti informaciją turėtų trukti ne ilgiau nei 5 min.
 			Kadangi pardavėjui svarbu tik peržvelgti informaciją ir ją atnaujinti, veikla nuosekli, o atsako laikas nėra tiek aktualus.
 
 		\subsubsection{Problemos ir tobulėjimo galimybės}
+			\begin{itemize}
+				\item{Pardavėjui sunku greitai surasti preigą prie savo prekių užsakymų.}
+				\item{Užsakymų sąraše neparodyta visa informacija, kuri gali būti reikalinga pardavėjui. Prie jos norint prieiti reikia paspausti dar vieną mygtuką.}
+				\item{Pardavėjas negali rūšiuoti užsakymų.}
+				\item{Jei kyla netikėtumų ir reikia susisiekti su klientu, reikia tai daryti per parduotuvės atstovus.}
+			\end{itemize}
+		
 		\subsubsection{Būsimasis scenarijus}
 			\begin{enumerate}
 				\item{Linas nueina į aludarystės internetinę parduotuvę ir bando gauti informaciją apie užsakymus.}
 				\item{Pagrindiniame puslapyje vartotojas paspaudžia ,,Užsakymai"}
 				\item{Atsidaro langas, kuriame pateiktas sąrašas su visais užsakymais}
-				\item{Užsakyme nurodyta, kokios prekės buvo užsakytos, apmokėjimo būdas, kaina, data, adresas ir užsakymo būsena(Apmokėta, neapmokėta, paruošta atsiėmimui, atsiimta)}
+				\item{Užsakyme nurodyta, kokios prekės buvo užsakytos, apmokėjimo būdas, kaina, data, adresas ir užsakymo būsena (apmokėta, neapmokėta, paruošta atsiėmimui, atsiimta)}
 				\item{Linas pasirenka dar neparuoštą atsiėmimui užsakymą}
 				\item{Linas surenka prekes iš parduotuvės ir paruošia atsiėmimui}
 				\item{Pristačius arba vartotojui pačiam atsiėmus prekes, pardavėjas atnaujina užsakymo būseną į ,,Atsiimta".}
 				\end{enumerate}
-	\subsection{Panaudojamumo siekiai ir matai}
+	\subsubsection{Panaudojamumo siekiai ir matai}
 		\begin{itemize}
 			\item{Pardavėjas savo užsakymų sąrašą galės rasti ne daugiau nei per 2 veiksmus.}
 			\item{Pardavėjas turi turėti galimybę susisiekti su pirkėju.}
 			\item{Kiekviena prekė pateikta su prekės kodu.}
 			\item{Pardavėjas turi turėti galimybę rūšiuoti užsakymus pagal datą ir būseną.}
-			\item{Pardavėjas galės išimti prekę iš prekybos ne daugiau nei per 7 veiksmus.}
 			\item{Pardavėjas galės pakeisti būseną ne daugiau nei per 2 veiksmus.}
 		\end{itemize}
+		
+	\subsection{Pardavėjas išima prekes iš prekybos}
+		\subsubsection{Koncepcinis scenarijus}
+			Jonas nori turėti teisę redaguoti savo prekes. Jonas šiuo metu turi susisiekti su parduotuvės atstovu, kad prekė nebūtų rodoma sąrašuose. Tai labai nepatogu Jonui, taip pat ir jo klientui, nes prekės, kurių nėra sandėliuose, ar, jei jos išvis nebebus siūlomos, yra vis dar rodomos svetainėje. Jonas norėtų turėti galimybę pats pašalinti prekes be tarpininko.
+		\subsubsection{Veiklų charakteristikos}
+	
+		\subsubsection{Problemos ir tobulinimo galimybės}
+			\begin{itemize}
+				\item{Pirkėjas mato prekes, kurių negali įsigyti}
+				\item{Pardavėjas negali išimti prekių iš prekybos be parduotuvės atstovo patvirtinimo}
+				\item{Informacija labai lėtai atnaujinama}
+			\end{itemize}
+		\subsubsection{Būsimasis scenarijus}
+			\begin{enumerate}
+				\item{Linas nueina į aludarystės internetinę parduotuvę ir bando išimti prekę iš prekybos.}
+				\item{Pagrindiniame puslapyje vartotojas paspaudžia ,,Mano prekės".}
+				\item{Atsidaro langas, kuriame pateiktas sąrašas su visomis prekėmis.}
+				\item{Prekių sąraše prie kiekvienos prekės piktogramos pateikiama trumpa prekės charakteristika.}
+				\item{Linas pasirenka prekę ir ant jos apspaudžia.}
+				\item{Linui parodoma visa informacija apie prekę ir mygtukas Redaguoti.}
+				\item{Linui paspaudus mygtuką Redaguoti atsiranda pasirinkimas išimti prekę iš prekybos.}
+				\item{Išėmus prekę iš prekybos, Linas grąžinamas į visų prekių sąrašą.}
+			\end{enumerate}
+		\subsubsection{Panaudojamumo siekiai ir matai}
+			\begin{itemize}
+				\item{Pardavėjas galės išimti prekę iš prekybos ne daugiau nei per 5 veiksmus.}
+				\item{Pardavėjas turi turėti galimybę išimti prekę iš prekybos.}
+				\item{Pardavėjas turi turėti galimybę redaguoti savo įkeltas prekes.}
+			\end{itemize}
 \section{Įkvepiančios esamų interfeisų idėjos}
 	\subsection{Paieškos interfeisas}
 		\begin{figure}[h]
