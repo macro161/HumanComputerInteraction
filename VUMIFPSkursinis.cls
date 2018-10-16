@@ -231,6 +231,10 @@
     \section*{#1}%
     \addcontentsline{toc}{section}{#1}% 
 }
+\newcommand{\subsectionnonum}[1]{%
+    \subsection*{#1}%
+    \addcontentsline{toc}{subsection}{#1}% 
+}
 
 % Skyriaus pavadinimas, neturintis numerio bei neįeinantis į turinį
 \newcommand{\sectionnonumnocontent}[1]{%
