@@ -1,0 +1,139 @@
+\documentclass[oneside]{VUMIFPSkursinis}
+\usepackage{algorithmicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsfonts}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{caption}
+\usepackage{color}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{subfig}
+\usepackage{ltablex}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{subfig}
+\usepackage{pbox}
+\renewcommand{\labelenumii}{\theenumii}
+\renewcommand{\theenumii}{\theenumi.\arabic{enumii}.}
+\renewcommand{\labelenumiii}{\theenumiii}
+\renewcommand{\theenumiii}{\theenumii\arabic{enumiii}.}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage[%
+	colorlinks=true,
+	linkcolor=black
+]{hyperref}
+\university{Vilniaus universitetas}
+\faculty{Matematikos ir informatikos fakultetas}
+\department{Programų sistemų katedra}
+\papertype{Žmogaus ir kompiuterio sąsaja laboratorinis darbas III}
+\title{Alaus gamybos įrangos ir ingredientų pirkimo sistema}
+\titleineng{Aludarystės internetinė parduotuvė}
+\status{3 kurso studentai}
+\author{Greta Pyrantaitė}
+\secondauthor{Matas Savickis}
+\thirdauthor{Andrius Bentkus}
+
+\supervisor{Kristina Lapin, Doc., Dr.}
+\date{Vilnius – \the\year}
+
+\bibliography{bibliografija}
+
+\begin{document}
+\maketitle
+
+\sectionnonum{Anotacija}
+Šio darbo tikslas išanalizuoti antramia laboratoriniame darbe sukurtus vartotojo sąsajos maketus. Analizė bus atlikta pagal euristikos ir pažintinės peržvalgos metodika. Kiekvienas grupės narys išanalizuos kitų dviejų grupės narių maketus. Išvadose bus pateikiama detaliojo prototipo projektiniai sprendimai.
+
+\begin{itemize}
+	\item{Greta Pyrantaitė - greta.pyrantaite@gmail.com}
+	\item{Matas Savickis - savickis.matas@gmail.com}
+	\item{Andrius Bentkus - andrius.bentkus@gmail.com}
+\end{itemize}
+
+\tableofcontents
+
+\sectionnonum{Įvadas}
+	\subsectionnonum{Programų sistemos ilgasis pavadinimas}
+		Alaus gamybos įrangos ir ingredientų pirkimo sistema.
+	\subsectionnonum{Programų sistemos trumpasis pavadinimas}
+		Aludarystės internetinė parduotuvė
+	\subsectionnonum{Dalykinė sritis}
+		Elektroninė parduotuvė skirta aludariams.
+	\subsectionnonum{Probleminė sritis}
+		Sistema turi suteikt galimybę nusipirkti alaus gamybai reikalingus ingredientus ir įrangą bei gauti visą reikalingą informaciją apie ingredientų ir įrangos specifikacijas.
+		Sistema taip pat turi vartotojui pateikti informaciją apie alaus gamybos procesą panaudojant nusipirktus ingredientus ir įrangą.
+	\subsectionnonum{Naudotojai}
+		\begin{itemize}
+			\item{Pirkėjas(aludaris) - pirkėjas turi galėti užsisakyti alaus gamybos ingridientus ir įrangą bei gauti reikalingą specifikaciją norint naudotis preke.
+				Pirkėjui turi užtekti mokyklinio informatikos kurso žinių ir bendro supratimo, kaip naviguotis internetinėse svetainėse.}
+			\item{Pardavėjas - pardavėjui sistema turi suteikti informaciją apie užsakymus, jų apmokėjimus ir panašią svarbią informaciją.
+				Sistema pardavėjui taip pat turi suteikti galimybę pridėti arba išimti prekes iš internetinės parduotuvės.
+				Pardavėjui taip pat turi užtekti mokyklinio lygio informatikos žinių ir bendrų žinių naviguotis interneto svetainėse.}
+		\end{itemize}
+	\subsectionnonum{Naudoti dokumentai}
+		Kristina Lapin - Žmogaus ir kompiuterio sąveikos paskaitų skaidrės, laboratorinių darbų aprašymai.
+\iffalse XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX \fi
+\section{Mato Savickio maketo vertinimas}
+	\subsection{Euristinis tikrinimas}
+\begin{center}
+    \begin{tabular}{ |p{3cm}| p{3cm} | p{11cm} | }
+    \hline
+    Euristika &Defekto sunkumas &Komentaras \\ \hline 
+   \hline
+    \end{tabular}
+\end{center}
+	\subsection{Pažintinė peržvalga}
+\begin{center}
+    \begin{tabular}{ |p{4cm}| p{6cm} | p{7cm} | }
+    \hline
+    Užduoties žingsniai & Ar aiškiai matoma, ką daryti? & Ar suprantamas atsakas \\ \hline 
+   \hline
+    \end{tabular}
+\end{center}
+	\subsection{Apibendrinimas}
+\iffalse XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX \fi
+\section{Gretos Pyrantaitės maketo vertinimas}
+	\subsection{Euristinis tikrinimas}
+\begin{center}
+    \begin{tabular}{ |p{3cm}| p{3cm} | p{11cm} | }
+    \hline
+    Euristika &Defekto sunkumas &Komentaras \\ \hline 
+   \hline
+    \end{tabular}
+\end{center}
+	\subsection{Pažintinė peržvalga}
+\begin{center}
+    \begin{tabular}{ |p{4cm}| p{6cm} | p{7cm} | }
+    \hline
+    Užduoties žingsniai & Ar aiškiai matoma, ką daryti? & Ar suprantamas atsakas \\ \hline 
+   \hline
+    \end{tabular}
+\end{center}
+	\subsection{Apibendrinimas}
+\section{Andriaus Bentkaus maketo vertinimas}
+	\subsection{Euristinis tikrinimas}
+\begin{center}
+    \begin{tabular}{ |p{3cm}| p{3cm} | p{11cm} | }
+    \hline
+    Euristika &Defekto sunkumas &Komentaras \\ \hline 
+   \hline
+    \end{tabular}
+\end{center}
+	\subsection{Pažintinė peržvalga}
+\begin{center}
+    \begin{tabular}{ |p{4cm}| p{6cm} | p{7cm} | }
+    \hline
+    Užduoties žingsniai & Ar aiškiai matoma, ką daryti? & Ar suprantamas atsakas \\ \hline 
+   \hline
+    \end{tabular}
+\end{center}
+	\subsection{Apibendrinimas}
+\iffalse XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX \fi
+\section{Išvados}
+
+
+\end{document}
