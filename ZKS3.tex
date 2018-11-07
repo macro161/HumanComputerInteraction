@@ -98,14 +98,42 @@
 \iffalse XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX \fi
 \section{Gretos Pyrantaitės maketo vertinimas}
 	\subsection{Euristinis tikrinimas}
+Mato Savickio vertinimas
 \begin{center}
     \begin{tabular}{ |p{3cm}| p{3cm} | p{11cm} | }
     \hline
-    Euristika &Defekto sunkumas &Komentaras \\ \hline 
+	Euristika &Defekto sunkumas &Komentaras \\ \hline
+	Būsenos matomumas & Lengas & Pagrindiniame ekrane niekur neindentifikuota kokiame ekrame yra vartotojas. 
+						Vartotojas turi suprasti iš patirties. 
+						Defekto sunkumas lengvas nes yra tik dvi pagrindinės būsenos ir jų funkcionalumas ženkliai skiriasi. \\ \hline
+	Būsenos matomumas & Sunkus & Vartotojui pakeitus užsakymo būseną vartotojas niekaip neinformuojamas, kad būsena buvo pakeista sėkmingai.
+						Sunkumo lygis aukštas, nes vartotojui norint įsitikinti, kad veiklą atliko teisingai kiekvieną kartą reikės saraše ieškoti užsakymo elemento kurį pakeitė, atsidaryti jį ir tik tuo metu pasižiūrėti ar būsena buvo pakeista teisingai. \\ \hline
+	Būsenos matomumas & Lengvas & Prekės informacijos redagavimo lange redaguojant prekės informaciją ir ją išsaugant vartotojas niekaip neinformuojamas, kad informacija pakeista sėkmingai.
+						Sunkumo lygis žemas, nes vartotojas iškarto nukeliamas į prekės aprašymą todėl gali pats pasižiūrėti ar viskas gerai, tačiau mažų pakeitimų reikės ieškoti ilgiau. \\ \hline
+	Naudotojo valdomas dialogas & Vidutinis & Vartotojo sąsajoje nėra pateikta kelio kurį nuėjo vartotojas(duonos trupiniai). 
+						Sunkumas vidutinis, nes varotojas netyčią paspaudęs jam nežinomą mygtuką atsiduria jam nežinomoje vietoje ir nežino kaip iki ten atėjo. \\ \hline
+	Darna ir standartai & Vidutinis & Užsakymo informacijos lange vartotojui pateikti du mygtukai ,,Pakeisti būseną" ir ,,Atšaukti".
+						Mygtumas atšaukti uždaro informacijos langą, tačiau šis mygtukas gali būti suprastas kaip užsakymo atšaukimas arba panaikinimas iš sąrašo. Sunkumas vidutinis, nes vartotojui pirmus kelis kartus mygtumo paskirtis gali pasirodyti dviprasmiška. \\ \hline
+
+   \hline
+    \end{tabular}
+\end{center}
+\begin{center}
+    \begin{tabular}{ |p{3cm}| p{3cm} | p{11cm} | }
+	\hline
+	Klaidų prevencija & Sunkus & Prekės informacijos redagavimo lange yra mygtukas ,,Išimti prekę". 
+					Vartotojui paspaudus jį pasirodo pranešimas klausiantis ,,Ar tikrai norite ištrinti prekę". 
+					Paspaudus jį prekė yra pašalinama iš sąrašo.
+					Nėra pateikta jokios ,,šiukšledėžės" arba ,,undo" galimybės, todėl vartotojui per klaidą patvirtinus prekės pašalinimą visa svarbi prekės informacija yra pašalinama nesugrįštamai. \\ \hline
+	Naudojimo lankstumas ir našumas & Lengvas & Vartotojui nėra suteikiama galimybė naudotis klavišų santrumpom, pelės santumpom, navigacijos šuoliais ar panašiais metodais palengvinančiais darbą.
+								Šis pažeidimas įvertintas kaip lengvas, nes programoje nėra daug funkcionalumo todėl tumpiniai daug laiko nesutaupytų. \\ \hline
+	Pagalba ir dokumentacija & Lengvas & Sistema vartotojui nesuteikia jokios dokumentacijos, apmokymų ar aprašymų kaip naudotis sistema. 
+							Įvertinta kaip lengvas defektas nes funkcionalumo yra nedaug ir jis išmokstamas pačiam bandant naudotis sistema. \\ \hline
    \hline
     \end{tabular}
 \end{center}
 	\subsection{Pažintinė peržvalga}
+
 \begin{center}
     \begin{tabular}{ |p{4cm}| p{6cm} | p{7cm} | }
     \hline
