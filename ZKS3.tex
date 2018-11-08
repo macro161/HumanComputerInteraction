@@ -208,8 +208,6 @@ Mato Savickio vertinimas
 	Būsenos matomumas & Vidutinis & ,,Kaip pasigaminti" lange vartotojui paspaudus ,,Įsidėti visas prekes" ir tada paspaudus ,,Taip" nepateikiamas joks pranešimas, kad prekės buvo sėkmingai  pirdėtos į krepšelį. Vidutinis, nes vartotojas gali susierzinti pirmą kartą pirkdamas prekes, nerasti kur jos atsirado ir palikti tinklalapį nenusipirkęs prekių. \\ \hline
 	Pagalba ir dokumentacija & Vidutinis & Informacija yra suteikiama tik pradedantiems aludariams.
 							Tinklalapyje nėra pateiktos informacijos padedančios lengviau įtraukti entiziastus ir giliau supažindinti juos su aludarystės tinklalapio veikimu ir sąvokomis. Vidutinis, nes yra galimybė prarasti pirkėjus pasirengusius sumokėti daug pinigų už brangią įrangą tačiau neradusiems informacijos apie ją. \\ \hline
-
-	
 	
    \hline
     \end{tabular}
@@ -229,7 +227,6 @@ Vertinimo autorė Greta Pyrantaitė
    \hline
     \end{tabular}
 \end{center}
-
 
 	\subsection{Pažintinė peržvalga}
 Mato Savickio peržvalga
@@ -261,11 +258,7 @@ Pažintinės peržvalgos autorė Greta Pyrantaitė
 	Prekės pasirinkimas & Vartotojas iš visų pateikų prekių ieško konkrečios prekės. Jam paiešką palengvina filtravimo galimybės ir tumpas kiekvienos prekės specifikacijos aprašymas. Vartotojas nesunkiai suranda norimą prekę ir paspaudžia ant jos & Paspaudus ant prekės atsidaro naujas langas su detalia prekės informacija. Vartotojui aišku, kad į jo paspaudimą tinklalapis suregavo \\ \hline
 	Detali prekės informacija & Vartotojui paspaudus ant vienos iš prekų atsiveria naujas langas su detaliu prekės aprašymu. Vartotojui aišku, kad būsena pasikeitė taip kaip vis norėjo nes antraštėje yra prekės pavadinimas & Vartotojas supranta, kad jis yra kitame puslapyje ir is navogacijos juostos mato kur gali eiti toliau. \\ \hline
 	Naudotojas ieško informacijos kaip pasigaminti alaus & Pagrindiniiame ekrane naudotojas ieško informacijos apie alaus gaminimą ir viršutinėje meniu juostoje aiškiai pastebi ,,Kaip pasigaminti" mygtuką. Vartotojui aišku, kad paspaudus jį jam bus suteikta informacija apie alaus gamyba  & Tinklapio atsakas vartotojui yra aiškus nes puslapis atidaro naują langą kurio antraštė yra ,,Pasigaminimo instrukcija" \\ \hline
-	Prekių iš mokymų pirkimas & Vartotojas nori įsigyti prekes kurias matė instrukcijoje. Instrukcijų puslapio dešinėje pusėje yra pateiktas visas prekių sąrašas ir vartotojas gali  jas įsidėti į krepšelį. Prekių ikonos yra aiškiai matomos vartotojo. & Pridedant prekes į krepšelį vartotojas neinformuojamas, kad operacija įvykdyta sėkmingai, todėl varotojas gali sutrikti ir įsidėti prekes kelis kartus. Reikia sisteminio pranešimo išspėjančio vartotoja, kad prekės pridėtos sėkmingai \\ \hline
-	
-	
-	
-	
+	Prekių iš mokymų pirkimas & Vartotojas nori įsigyti prekes kurias matė instrukcijoje. Instrukcijų puslapio dešinėje pusėje yra pateiktas visas prekių sąrašas ir vartotojas gali  jas įsidėti į krepšelį. Prekių ikonos yra aiškiai matomos vartotojo. & Pridedant prekes į krepšelį vartotojas neinformuojamas, kad operacija įvykdyta sėkmingai, todėl varotojas gali sutrikti ir įsidėti prekes kelis kartus. Reikia sisteminio pranešimo išspėjančio vartotoja, kad prekės pridėtos sėkmingai \\ \hline	
    \hline
     \end{tabular}
 \end{center}
@@ -276,6 +269,18 @@ Makete aiškiai pateiktos prekės ir jų sub-kategorijos. Vartotojas gali greita
 
 \iffalse XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX \fi
 \section{Išvados}
-
-
+Peržiūrėjus ir įvertinus sukurtus maketus pastebėtos pasikartojančios klaidos tokios kaip nepilna ir neaiški navigacija, klaidų prevencijos trūkumas, puslapio antraštės nebūvimas ir pasirinkimų dviprasmiškumas. Šios klaidos yra pagrindiniai dalykai į kuriuos atsižvelgsime kurdami pilną maketą.
+\linebreak
+\linebreak
+Detaliojo prototipo kūrimo gairės:
+\begin{enumerate}
+	\item{Kiekvienas puslapis kuris nėra pagrindinis turi turėti ,,duonos trupinių" navigacijos elementą.}
+	\item{Kiekvienas puslapis kuris nėra pagrindinis turi turėti puslapio antrašę informuojančia kokiame puslapyje vartotojas yra.}
+	\item{Pasirinkimo mygtuko pavadinimas negali būti dviprasmiškas, jis turi tiksliai informuoti koks veiksmas bus atliktas jį paspaudus.}
+	\item{Prieš vartotojui atliekant veiksmą kuris panaikintų duomenis vartotojas turi būti informuotas, kad paspaudus mygtuką duomenys dings.}
+	\item{Vartotojui turi būti suteikta galimybė atstatyti ištrintus duomenis šiukšledėžės pagalba(undo)}
+	\item{Vartotojui turi būti parodytas informacinis pranešimas apie sėkmingai atliktą veiksmą}
+	\item{Pagrindiniai navigacijos elementai turi būti kairėje puslapio pusėje viršutiniame kampe}
+	\item{Vartotojui renkantis iš sąrašo elementų turi būti pateikta pakankamai duomenų, kad vartotojas galėtų išsirinkti reikiamą elementą tačiau ne per daug informacijos, kad sarašas būtų blasškantis dėmesį}
+\end{enumerate}
 \end{document}
